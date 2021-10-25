@@ -1,0 +1,25 @@
+GET http://localhost:3000
+###
+GET http://localhost:3000/items
+###
+POST http://localhost:3000/items
+Content-Type: application/json
+
+  {  
+    "title": "Camara Digital Canon EOS M50",
+    "price": 850,
+    "image": "camara-canon-eos.jpg"
+    }
+
+
+###
+POST http://localhost:3000/order
+Content-Type: application/json
+
+{
+  "items": [
+    {
+      "qty": 5
+    }
+  ]
+}

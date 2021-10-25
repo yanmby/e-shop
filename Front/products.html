@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="e-shop">
+    <meta name="author" content="Gabriel Olmedo Gonzalez, Juan fernando">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="product.css" rel="stylesheet">
+    <title>E-shop Productos</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/album/">
+
+    <!-- SCRIPTS -->
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+        
+    <script defer src="./scripts/main.js"></script>
+    <script defer src="./scripts/tienda.js"></script>
+    
+    
+    <script defer src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+  </head>
+  <body>
+    
+    <header class="p-3 mb-3 border-bottom site-header sticky-top py-1">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a class="py-2" href="./index.html" aria-label="Product">
+            <img src="images/logo.png" alt="mdo" width="32" height="32" class="rounded-circle" >
+            </a>
+  
+          <ul name="home" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="#" class="nav-link px-2 link-secondary">Inicio</a></li>
+            <li><a href="productos/products.html" class="nav-link px-2 link-dark">Ver todo</a></li>
+            <li><a href="#carrito" class="nav-link px-2 link-dark">Celulares</a></li>
+            <li><a href="#" class="nav-link px-2 link-dark">Computadores</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div >
+            <a href="#"  id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="https://cdn-icons-png.flaticon.com/512/1177/1177568.png" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+<main>
+
+  <section class="py-5 text-center container" id="banner_productos" >
+    <div class="row py-lg-5">
+      <div  class="col-lg-6 col-md-8 mx-auto" > 
+
+        <h1 class="fw-normal ">Productos e-Shop</h1>
+        <p class="fw-normal">Explora nuestros productos de calidad.</p>
+        <p>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 items">
+
+      </div>
+    </div>
+  </div>
+
+<!-- START SECTION SHOPPING CART -->
+  <section name="carrito" class="shopping-cart">
+    <div class="container">
+        <h1  class="text-center py-2 fw-normal " >Carrito de compras</h1>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="shopping-cart-header">
+                    <h6>Producto</h6>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="shopping-cart-header">
+                    <h6 class="text-truncate">Precio</h6>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shopping-cart-header">
+                    <h6>Cantidad</h6>
+                </div>
+            </div>
+        </div>
+        <!-- ? START SHOPPING CART ITEMS -->
+        <div class="shopping-cart-items shoppingCartItemsContainer">
+        </div>
+        <!-- ? END SHOPPING CART ITEMS -->
+  
+        <!-- START TOTAL -->
+        <div class="row">
+            <div class="col-12">
+                <div class="shopping-cart-total d-flex align-items-center">
+                    <p class="mb-0">Total</p>
+                    <p class="ml-4 mb-0 shoppingCartTotal">= 0$</p>
+                    <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                        data-delay="2000">
+                        <div class="toast-header">
+                            <span>✅</span>
+                            <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="toast-body text-white">
+                            Se aumentó correctamente la cantidad
+                        </div>
+                    </div>
+                    <div class="comprar"><button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                        data-target="#comprarModal">Comprar</button></div>
+                </div>
+            </div>
+        </div>
+  
+        <!-- END TOTAL -->
+  
+        <!-- START MODAL COMPRA -->
+        <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Pronto recibirá su pedido</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL COMPRA -->
+  
+  
+    </div>
+  
+  </section>
+  <!-- END SECTION SHOPPING CART -->
+
+</main>
+
+
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+  <p class="col-md-4 mb-0 text-muted">&copy; 2021 e-shop Diplomatura Fullstack UPB
+      Juan Fernando Aristizabal
+      Gabriel Olmedo Gonzalez
+      Juan Pablo Sanchez
+  </p>
+
+  <a href="#" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <img src="images/logo.png" alt="mdo" width="32" height="32" class="rounded-circle" >
+  </a>
+
+  <ul class="nav col-md-4 justify-content-end">
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Productos</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Celulares</a></li>
+    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Tablets</a></li>
+    
+  </ul>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+  
+</html>

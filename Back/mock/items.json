@@ -1,0 +1,57 @@
+[
+  {
+    "id": "1ec58676-898f-4fa5-9fcf-1f386dda4724",
+    "title": "Celular Iphone 13 pro max",
+    "price": 1600,
+    "image": "iphone-13-promax.png"
+  },
+  {
+    "id": "420bad3c-974e-4749-9e35-7ea303320e93",
+    "title": "Celular Samsung Galaxy A51",
+    "price": 480,
+    "image": "samsung-galaxy-a51.jpg"
+  },
+  {
+    "id": "bb5c95a2-f1d3-44ad-bafd-3ebd7bdbcaa9",
+    "title": "Celular Xiaomi Redminote 11",
+    "price": 550,
+    "image": "xiaomi-redminote11.jpg"
+  },
+  {
+    "id": "8655bd50-c30c-476c-81e4-ce78a0298a52",
+    "title": "Tablet Lenovo Yoga",
+    "price": 240,
+    "image": "tablet-lenovo-yoga.png"
+  },
+  {
+    "id": "12b06f0e-7a73-4b0c-b70d-ddb614eb60a8",
+    "title": "Tablet Huawei MatePad T8",
+    "price": 150,
+    "image": "tablet-huawei-matepad.jpg"
+  },
+  {
+    "id": "df72e507-7988-451a-9e20-0cf3ef3a52af",
+    "title": "Portatil Hp Pavilion",
+    "price": 960,
+    "image": "portatil-hp-pavilion.jpg"
+  },
+  {
+    "id": "df72e507-7988-451a-9e20-0cf3ef3a52ac",
+    "title": "Portatil Acer i5",
+    "price": 700,
+    "image": "portatil-acer.jpg"
+  },
+  {
+    "id": "df72e507-7988-451a-9e20-0cf3ef3a52ad",
+    "title": "Camara Digital Canon 4000d",
+    "price": 465,
+    "image": "camara-canon.jpg"
+  },
+  {
+    "id": "df72e507-7988-451a-9e20-0cf3ef3a52ab",
+    "title": "Camara Digital Canon EOS M50",
+    "price": 850,
+    "image": "camara-canon-eos.jpg"
+  }
+
+]
