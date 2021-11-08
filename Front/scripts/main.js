@@ -26,7 +26,7 @@ function printData(data) {
 
 function createDomElement(item) {
   const itemHtml = `
-<div class="item card shadow-sm">
+<div class="item card shadow-sm" data-id=${item._id}>
   <img class="item-image" src="${serverUrl}${imagesPath}${item.image}" alt="iphone-13-promax" width="300" height="300"  >
   <div class="card-body">
     <p class="card-title fw-bold item-title">${item.title}</p>

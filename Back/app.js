@@ -20,6 +20,7 @@ db.once("open", () => console.log("Conectado a BB.DD"))
 
 const itemsRoutes = require("./routes/items")
 const imgRoutes = require("./routes/img")
+const paymentsIntentRoutes = require("./routes/paymentsintent")
 const ordersRoutes = require("./routes/orders")
 
 
@@ -31,6 +32,7 @@ app.use(express.json())
 
 app.use("/items",itemsRoutes)
 app.use("/img",imgRoutes)
+app.use("/create-payment-intent", paymentsIntentRoutes)
 app.use("/order",ordersRoutes)
 app.use(express.static(__dirname + '/Front/index.html'));
 
@@ -41,9 +43,7 @@ app.get('/', (req, res) => {
     res.send("Home")
   })
 
-  app.get('*', function(req, res){
-    res.sendfile(__dirname + '/public/index.html');
-  });
+  
 
 
 //ITEMS

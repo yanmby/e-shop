@@ -23,3 +23,28 @@ Content-Type: application/json
     }
   ]
 }
+
+###
+GET http://localhost:3000/items/item
+Content-Type: application/json
+{
+
+  "itemId": "6176ddbe4a2aa83e39405e73"
+}
+###
+GET http://localhost:3000/items/item
+Content-Type: application/json
+
+{
+    "itemId":"6176ddbe4a2aa83e39405e73"
+}
+###
+POST http://localhost:3000/create-payment-intent
+Content-Type: application/json
+
+[
+  {
+    "id":"6176ddbe4a2aa83e39405e73",
+    "qty": 2
+  }
+]

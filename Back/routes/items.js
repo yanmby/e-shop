@@ -1,13 +1,14 @@
-const express =require("express")
-const router = express.Router()
+const express = require('express');
+const getItemById = require('../data/getItemById');
+const router = express.Router();
 
 //MODELS
-const Item = require("../models/item")
+const Item = require('../models/Item');
 
 
 
 
-// Get itams
+// Get items
 
 router.get("/", async (req, res) =>{
     try{
@@ -17,6 +18,19 @@ router.get("/", async (req, res) =>{
         res.json({message: err.message})
     }
 });
+
+// GET ITEM
+router.get('/item', async (req, res) => {
+    const itemId = req.body.itemId;
+    try {
+      const itemFromDB = await getItemById(itemId);
+      res.json(itemFromDB);
+    } catch (err) {
+      res.json({ message: err.message });
+    }
+  });
+
+
 
 // CREATE ITEM
 router.post("/",async (req, res) =>{
